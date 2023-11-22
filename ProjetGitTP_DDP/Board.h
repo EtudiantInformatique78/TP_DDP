@@ -1,10 +1,29 @@
 #pragma once
+#include <iostream>
 #include <deque>
 #include <iostream>
 
 class Point
 {
+private:
+	int coordX;
+	int coordY;
+	std::string name;
 
+public:
+	//constructor
+	Point(int _coordX, int _coordY, std::string _name)
+	{
+		coordX = _coordX;
+		coordY = _coordY;
+		name = _name;
+	}
+
+	//destructor
+	~Point()
+	{
+		std::cout << "point destroyed" << std::endl;
+	}
 };
 
 class Board
@@ -47,4 +66,5 @@ public:
 
 		std::cout << "----------------------------------" << std::endl;
 	}
+
 };
