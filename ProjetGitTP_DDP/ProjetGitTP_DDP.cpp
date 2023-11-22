@@ -5,9 +5,15 @@
 
 #include <deque>
 
+#include "Board.h"
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    //std::cout << "Hello World!\n";
+    Board b = Board();
+    b.printBoard();
+
+    /*
     std::deque<int> gquizz;
     gquizz.push_back(10);
     gquizz.push_front(20);
@@ -27,7 +33,7 @@ int main()
 
     std::cout << "gquizz.front(): " << gquizz.front() << std::endl;
     std::cout << "gquizz.back(): " << gquizz.back() << std::endl;
-
+    */
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
