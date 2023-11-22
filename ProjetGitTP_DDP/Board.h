@@ -54,7 +54,7 @@ public:
 		std::deque<int>::iterator it2;
 
 		std::cout << "----------------------------------" << std::endl;
-
+		  
 		for(it1 = board.begin(); it1 != board.end(); it1++)
 		{
 			for(it2 = (*it1).begin(); it2 != (*it1).end() ; it2++ )
